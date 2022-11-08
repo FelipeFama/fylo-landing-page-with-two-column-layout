@@ -80,3 +80,10 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.first-article {
+  flex-direction: row-reverse;
+  width: 89%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
