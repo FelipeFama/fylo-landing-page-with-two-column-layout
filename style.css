@@ -360,3 +360,19 @@ main {
   word-spacing: 1.5px;
 }
 
+/*footer*/
+footer {
+  width: 100%;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 6.9rem 5.5rem;
+  align-items: flex-start;
+  background-color: var(--very-dark-blue);
+  margin-bottom: 0;
+  color: var(--light-grayish-blue);
+}
+
+footer img {
+  max-width: 70%;
+}
+
