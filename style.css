@@ -22,6 +22,9 @@
 body {
  box-sizing: border-box;
  font-family: var(--body-font);
+ -ms-overflow-style: none;
+ scrollbar-width: none;
+ overflow-y: scroll;
 }
 
 img {
@@ -34,4 +37,46 @@ ul, ol, li {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+button {
+  background-color: var(--bright-blue);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: var(--light-grayish-blue);
+  cursor: pointer;
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+
+nav, 
+nav ul,
+.first-article, 
+.first-description, 
+.second-article,
+.second-description {
+  display: flex;
+} 
+
+nav {
+  flex-direction: row;
+  padding: 4rem 5rem;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--desatured-blue);
+}
+
+nav ul {
+  flex-direction: row;
+  gap: 3.6rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
