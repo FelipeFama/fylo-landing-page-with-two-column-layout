@@ -2,10 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-/*Variables*/
+/*variables*/
 :root {
  --very-dark-blue: hsl(243, 87%, 12%);
- --desatured-blue: hsl(238, 22%, 44%);
+ --desaturated-blue: hsl(238, 22%, 44%);
  --bright-blue: hsl(224, 93%, 58%);
  --moderate-cyan: hsl(170, 45%, 43%);
  --light-grayish-blue: hsl(240, 75%, 98%);
@@ -14,6 +14,7 @@
  --primary-font: 'Raleway', sans-serif;
 }
 
+/*global styles*/
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +26,10 @@ body {
  -ms-overflow-style: none;
  scrollbar-width: none;
  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 img {
@@ -43,10 +48,14 @@ button {
   background-color: var(--bright-blue);
   border: 1px solid transparent;
   border-radius: 5px;
+  box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
+  -webkit-box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
   color: var(--light-grayish-blue);
   cursor: pointer;
   font-family: var(--primary-font);
   font-weight: 700;
+  transition: all ease-in-out 0.3s;
 }
 
 nav, 
@@ -58,12 +67,13 @@ nav ul,
   display: flex;
 } 
 
+/*header*/
 nav {
   flex-direction: row;
   padding: 4rem 5rem;
   align-items: center;
   justify-content: space-between;
-  color: var(--desatured-blue);
+  color: var(--desaturated-blue);
 }
 
 nav ul {
@@ -81,9 +91,65 @@ main {
   flex-direction: column;
 }
 
+/*first-article*/
 .first-article {
   flex-direction: row-reverse;
   width: 89%;
   margin: 0 auto;
   margin-top: 1.5rem;
+}
+
+.first-article img {
+  max-width: 50%;
+}
+
+.first-description {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 4.9rem;
+  gap: 1.1rem;
+  color: var(--very-dark-blue);
+}
+
+.first-description p {
+  letter-spacing: 1px;
+  max-width: 90%;
+  line-height: 1.4rem;
+}
+
+.first-description h1 {
+  font-size: 2.5rem;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  line-height: 3.7rem;
+  word-spacing: 2px;
+  color: var(--very-dark-blue);
+}
+
+.first-email {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 0.6rem;
+  grid-template-areas: "input button";
+  gap: 2rem;
+}
+
+.first-email input {
+  padding: 0.8rem;
+  width: 95.5%;
+  grid-area: input;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.first-email button {
+  grid-area: button;
+  width: 66%;
+}
+
+.first-email input::placeholder {
+  color: var(--light-gray);
+  font-family: var(--primary-font);
+  letter-spacing: 1px;
+  opacity: 0.8;
 }
