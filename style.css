@@ -2,11 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-/*variables*/
+/* variables */
 :root {
  --very-dark-blue: hsl(243, 87%, 12%);
  --desaturated-blue: hsl(238, 22%, 44%);
  --bright-blue: hsl(224, 93%, 58%);
+ --blue-hover:  hsla(224, 91%, 70%, 0.824);
  --moderate-cyan: hsl(170, 45%, 43%);
  --light-grayish-blue: hsl(240, 75%, 98%);
  --light-gray: hsl(0, 0%, 75%);
@@ -15,7 +16,7 @@
  --primary-font: 'Raleway', sans-serif;
 }
 
-/*global styles*/
+/* global styles */
 * {
   margin: 0;
   padding: 0;
@@ -68,7 +69,7 @@ nav ul,
   display: flex;
 } 
 
-/*header*/
+/* header */
 nav {
   flex-direction: row;
   padding: 4rem 5rem;
@@ -92,7 +93,7 @@ main {
   flex-direction: column;
 }
 
-/*first-article*/
+/* first-article */
 .first-article {
   flex-direction: row-reverse;
   width: 89%;
@@ -155,7 +156,7 @@ main {
   opacity: 0.8;
 }
 
-/*second article*/
+/* second article */
 .second-article {
   position: relative;
   background-color: hsl(240, 75%, 98%);
@@ -231,7 +232,7 @@ main {
   width: max-content;
 }
 
-.linked-info img {
+.linked-info svg {
   width: 0.9rem;
   height: 1rem;
 }
@@ -296,7 +297,7 @@ main {
   height: 2rem;
 }
 
-/*third article*/
+/* third article */
 .third-article {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -360,7 +361,7 @@ main {
   word-spacing: 1.5px;
 }
 
-/*footer*/
+/* footer */
 footer {
   display: flex;
   flex-direction: column;
@@ -445,3 +446,38 @@ footer img {
   transition: all ease-in-out 0.3s;
 }
 
+/* hover */
+@media(hover: hover) {
+  button:hover,
+  .first-menu li:hover,
+  .second-menu li:hover,
+  .socials-svg:hover g,
+  .socials-svg:hover,
+  .linked-info:hover .svg-bg,
+  .linked-info:hover a,
+  .linked-info:hover a::after
+   {
+    transition: all ease-in-out 0.3s;
+  }
+  button:hover {
+    background-color: var(--blue-hover);
+  }
+  .first-menu li:hover,
+  .second-menu li:hover {
+    color: var(--blue-hover);
+  }
+  .socials-svg:hover g,
+  .socials-svg:hover {
+    border-color: var(--blue-hover);
+    fill: var(--blue-hover);
+  }
+  .linked-info:hover a {
+    color: hsl(170, 56%, 71%);
+  }
+  .linked-info:hover a::after {
+    background-color: hsl(170, 56%, 71%);
+  }
+  .linked-info:hover .svg-bg {
+    fill: hsl(170, 56%, 71%);
+  }
+}
