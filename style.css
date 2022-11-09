@@ -538,3 +538,138 @@ footer img {
 .second-input.success::after {
   margin-top: 50px;
 }
+
+/*responsive*/
+@media screen and (max-width: 1200px)  {
+  .third-article-email button {
+    min-width: 80%;
+  }
+  .footer-info,
+  .menus {
+    gap: 3rem;
+  }
+  .menus {
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  nav {
+    padding: 2rem;
+  }
+  .third-article {
+    display: flex;
+  }
+  .first-article,
+  .second-article,
+  .third-article {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3.5rem;
+  }
+  .second-article {
+    padding-left: initial;
+  }
+  .second-article::after {
+    margin-top: -120%;
+    margin-left: 0;
+  }
+  .first-email,
+  .third-article-email {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "input" 
+    "button";
+    gap: 1.5rem;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .first-email label,
+  .third-article-email label {
+    width: 100%;
+  }
+  .first-email button, 
+  .third-article-email button {
+    min-width: 100%;
+    width: 100%;
+    padding: 1rem;
+  }
+  .first-email input {
+    padding: 0.8rem 0.4rem;
+  }
+  .first-input.error::after {
+    margin-top: 50px;
+  }
+  .first-input.success::after {
+    margin-top: 50px;
+  }
+  .third-article-email input {
+    padding: 0.8rem 0;
+    width: 100%;
+  }
+  .first-article img,
+  .second-image-cover {
+    max-width: 80%;
+  }
+  .info,
+  .linked-info,
+  .testimonials {
+    align-items: center;
+  }
+  .testimonials {
+    margin: 0 auto;
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .first-input.error::after {
+    margin-top: 5px;
+  }
+  .second-input.success::after {
+    margin-top: 5px;
+  }
+  .second-article::after {
+    margin-top: -150%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .socials {
+    margin-left: initial;
+  }
+}
+
+@media screen and (max-width: 530px){
+  .second-article::after {
+    margin-top: -200%;
+  }
+  nav {
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+  }
+  .third-article {
+    padding: 1.5rem;
+  }
+  .second-input.error::after {
+    margin-top: 50px;
+  }
+  .second-input.success::after {
+    margin-top: 50px;
+  }
+  footer {
+    padding: 1.5rem;
+  }
+  .menus {
+    flex-direction: column;
+  }
+  .socials {
+    margin: 0 50%;
+  }
+}
