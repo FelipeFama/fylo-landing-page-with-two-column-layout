@@ -17,6 +17,11 @@
 ## :book: Project Information
 - Fylo landing page with two column layout solution frontendmentor
 - <p>Challenge link:<a href="https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5"> Front end Mentor Challenge</a></p>
+- Semantic HTML5 markup
+- CSS custom properties
+- Grid and Flex
+- Media queries and responsivity
+
 
 ## :bulb: Author: Lipeh Fama
    My links:
