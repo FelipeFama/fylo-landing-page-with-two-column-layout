@@ -666,6 +666,9 @@ footer img {
   footer {
     padding: 1.5rem;
   }
+  .footer-info {
+    flex-direction: column;
+  }
   .menus {
     flex-direction: column;
   }
