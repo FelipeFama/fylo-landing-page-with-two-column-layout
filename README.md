@@ -3,11 +3,11 @@
 
 ## Desktop Layout
 
-![fylo-desktop](https://user-images.githubusercontent.com/91050670/200791895-ef417387-a27b-4841-95a8-e64d99d45214.png)
+![fylo-landing-page-desktop](https://user-images.githubusercontent.com/91050670/201118922-dfbf52e1-9289-4781-8f9e-a9396eeebc6b.png)
 
 ## Responsive Layout 
 
-![fylo-responsive](https://user-images.githubusercontent.com/91050670/200795717-94987d55-5d18-4509-8e45-210432b17fec.png)
+![fylo-landing-page-responsive](https://user-images.githubusercontent.com/91050670/201119599-6afdd845-859f-4c09-860e-1fca69d2bb59.png)
 
 ## :wrench: Technologies Used
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
