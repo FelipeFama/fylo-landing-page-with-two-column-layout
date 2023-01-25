@@ -1,0 +1,34 @@
+/* hover */
+@media (hover: hover) {
+  button:hover,
+  .first-menu li:hover,
+  .second-menu li:hover,
+  .socials-svg:hover g,
+  .socials-svg:hover,
+  .linked-info:hover .svg-bg,
+  .linked-info:hover a,
+  .linked-info:hover a::after {
+    transition: all ease-in-out 0.3s;
+  }
+  button:hover {
+    background-color: var(--blue-hover);
+  }
+  .first-menu li:hover,
+  .second-menu li:hover {
+    color: var(--blue-hover);
+  }
+  .socials-svg:hover g,
+  .socials-svg:hover {
+    border-color: var(--blue-hover);
+    fill: var(--blue-hover);
+  }
+  .linked-info:hover a {
+    color: hsl(170, 56%, 71%);
+  }
+  .linked-info:hover a::after {
+    background-color: hsl(170, 56%, 71%);
+  }
+  .linked-info:hover .svg-bg {
+    fill: hsl(170, 56%, 71%);
+  }
+}

@@ -1,0 +1,62 @@
+/* first-article */
+.first-article {
+  flex-direction: row-reverse;
+  width: 89%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.first-article img {
+  max-width: 50%;
+}
+
+.first-description {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 4.9rem;
+  gap: 1.1rem;
+  color: var(--very-dark-blue);
+}
+
+.first-description p {
+  letter-spacing: 1px;
+  max-width: 90%;
+  line-height: 1.4rem;
+}
+
+.first-description h1 {
+  font-size: 2.5rem;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  line-height: 3.7rem;
+  word-spacing: 2px;
+  color: var(--very-dark-blue);
+}
+
+.first-email {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 0.6rem;
+  grid-template-areas: "input button";
+  gap: 2rem;
+}
+
+.first-email input {
+  padding: 0.8rem;
+  width: 95.5%;
+  grid-area: input;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.first-email button {
+  grid-area: button;
+  width: 66%;
+}
+
+.first-email input::placeholder {
+  color: var(--light-gray);
+  font-family: var(--primary-font);
+  letter-spacing: 1px;
+  opacity: 0.8;
+}

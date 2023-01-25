@@ -1,0 +1,83 @@
+/* input-error */
+.first-input.error,
+.second-input.error {
+  position: relative;
+}
+
+.first-input.error input,
+.second-input.error input {
+  outline: 1px solid var(--error);
+}
+
+.first-input.error::after,
+.second-input.error::after {
+  position: absolute;
+  content: "Please check your email";
+  color: var(--error);
+  left: 0;
+  width: inherit;
+  text-align: left;
+  font-family: var(--primary-font);
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.second-input.error::after {
+  margin-top: 50px;
+}
+
+/* input success */
+.first-input.success,
+.second-input.success {
+  position: relative;
+}
+
+.first-input.success input,
+.second-input.success input {
+  outline: 1px solid var(--moderate-cyan);
+}
+
+.first-input.success::after,
+.second-input.success::after {
+  position: absolute;
+  content: "We sent you an email";
+  color: var(--moderate-cyan);
+  left: 0;
+  width: inherit;
+  text-align: left;
+  font-family: var(--primary-font);
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.second-input.success::after {
+  margin-top: 50px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 960px) {
+  .first-input.error::after {
+    margin-top: 50px;
+  }
+  .first-input.success::after {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .first-input.error::after {
+    margin-top: 5px;
+  }
+  .second-input.success::after {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .second-input.error::after {
+    margin-top: 50px;
+  }
+  .second-input.success::after {
+    margin-top: 50px;
+  }
+}
